@@ -1,4 +1,17 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import elementUi from  "./element/element"
 
-createApp(App).mount('#app')
+// import VueLazyLoad from "vue-lazyload"
+import store from "./store/store.js"
+import  "animate.css"
+import App from './App.vue'
+import mitt from "mitt"
+
+ const app= createApp(App)
+app.use(elementUi).use(store)
+app.config.globalProperties.$allbus=new mitt();
+
+ app.mount('#app')
+ 
+
+

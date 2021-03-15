@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+
+<div class="wrap">
+ <router-view></router-view>
+
+</div>
+
+
 </template>
 
+
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+
+
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang='stylus' rel='stylesheet/stylus' >
+@import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
+
+body 
+    background #F4F4F4
+    
+.el-card__header
+
+    padding 0 !important
+
+.el-drawer
+        height 80% !important
+ul 
+    list-style-type none
+.vjs-big-play-button
+    left 50% !important
+    top 50% !important
+    transform translate(-50%,-50%) 
+
 </style>
